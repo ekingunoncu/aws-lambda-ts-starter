@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node_modules/typescript/bin/tsc",
     "test": "jest",
-    "deploy": "npm run build && sam build && sam deploy --stack-name your-function-name --s3-bucket dynoqrcode --capabilities CAPABILITY_IAM"
+    "deploy": "npm run build && sam build && sam deploy --stack-name your-function-name --s3-bucket your-bucket-name --capabilities CAPABILITY_IAM"
   },
   "files": [
     "/handlers"
